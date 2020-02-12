@@ -6,7 +6,7 @@
  * @LastEditTime: 2020-02-12 12:29:40
  * @Email: wnejie@byteborder.com
  */
-const wait = require('./wait1')
+const wait = require('./wait')
 
 // require('./page')
 wait.fnB()
