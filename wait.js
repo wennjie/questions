@@ -19,11 +19,24 @@ class wait {
             console.log(this.status, '执行完成')
         }, 3000)
     }
-    async fnB() {
-        console.log('等待 status 为true 时 执行');
+    fnB() {
+        if (this.status) {
+            console.log('等待 status 为true 时 执行');
+        } else {
+            this.fuC().then(d => {
+            if (d) {
+                console.log('等待 status 为true 时 执行');
+            }
+        })
+    }
     }
     fuC() {
-        TOOD
+        return new Promise((r1, r2) => {
+           setTimeout(() => {
+           r1(this.status)
+           r2(0)
+        }, 3000)
+    })
     }
 
 }
