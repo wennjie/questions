@@ -3,7 +3,7 @@
  * @Author: wenjie
  * @Date: 2020-02-11 19:58:08
  * @LastEditors  : wenjie
- * @LastEditTime : 2020-02-12 12:27:06
+ * @LastEditTime : 2020-02-12 12:30:18
  * @Email: wnejie@byteborder.com
  */
 
@@ -23,8 +23,7 @@ class wait {
         console.log('等待 status 为true 时 执行');
     }
     fuC() {
-     
-
+        TOOD
     }
 
 }

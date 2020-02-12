@@ -3,10 +3,10 @@
  * @Author: wenjie
  * @Date: 2020-02-11 19:56:59
  * @LastEditors  : wenjie
- * @LastEditTime : 2020-02-11 20:00:29
+ * @LastEditTime : 2020-02-12 12:29:27
  * @Email: wnejie@byteborder.com
  -->
-
+## 完成后 pr
 
 node js 或 html中实现 
 
@@ -38,3 +38,7 @@ node js 或 html中实现
 	wait.fnA()
 	wait.fnB()
 </script>
+
+
+
+
