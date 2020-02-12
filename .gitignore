@@ -4,7 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
-wait_.js
+wait.js
 # testing
 /coverage
 
