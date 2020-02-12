@@ -3,7 +3,7 @@
  * @Author: wenjie
  * @Date: 2020-02-12 15:52:30
  * @LastEditors  : wenjie
- * @LastEditTime : 2020-02-12 16:08:38
+ * @LastEditTime : 2020-02-12 16:14:02
  * @Email: wnejie@byteborder.com
  -->
 <template>
@@ -14,6 +14,9 @@
   <br/>
   不限于 promise , callBack , observer , watcher ,  notify  取最优方案
   <br/>
+
+
+  控制台 调试
 
   </div>
 </template>
