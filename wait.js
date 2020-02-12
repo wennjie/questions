@@ -14,18 +14,18 @@ class wait {
         this.status = false;
     }
     fnA() {
-        setTimeout(() => {
-            this.status = true;
-            console.log(this.status, '执行完成')
-        }, 3000)
+        return new Promise((resolve,reject)=>{
+            setTimeout(() => {
+                this.status = true;
+                console.log(this.status, '执行完成')
+                resolve()
+            }, 3000)
+        })
     }
     async fnB() {
+        await this.fnA()
         console.log('等待 status 为true 时 执行');
     }
-    fuC() {
-        TOOD
-    }
-
 }
 
 module.exports = new wait();
