@@ -31,10 +31,10 @@ class wait {
     }
     }
     fuC() {
-        return new Promise((r1, r2) => {
+        return new Promise((resolve, reject) => {
            setTimeout(() => {
-           r1(this.status)
-           r2(0)
+           resolve(this.status)
+           reject(0)
         }, 3000)
     })
     }
