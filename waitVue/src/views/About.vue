@@ -15,6 +15,7 @@
 import wait from '../utils/wait';
 export default {
   created() {
+    
     wait.fnB()
   },
 }
