@@ -13,8 +13,26 @@ import router from './router'
 import wait from './utils/wait'
 
 Vue.config.productionTip = false
+router.beforeEach((to, from, next) => {
+  if (['/about'].indexOf(to.path) !== -1) {
+    next()
+    if (!wait.status) {
+      wait.fnA().then((resolve) => {
+        wait.fnB()
+      }).catch((reject) => {
+        console.log('reject，', reject)
+      })
+    }
+  } else {
+    next()
+    if (!wait.status) {
+      wait.fnA()
+    }
 
-wait.fnA()
+  }
+
+})
+
 
 new Vue({
   router,
