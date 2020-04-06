@@ -18,16 +18,22 @@ class wait {
         }, 3000)
     }
     async fnB() {
-        //TODO  
-      if(this.status==true){
-        console.log('fnA返回status == true,执行以下内容');
-      }
-       
+        await this.fnC();
+            if(this.status==true){
+                console.log('fnA返回status == true,执行以下内容');
+            }
+
     }
     async fnC() {
-       // TODO 
+        return new Promise((resolve) => {
+            const end = setInterval(() => {
+                if (this.status) {
+                    clearInterval(end);
+                    resolve();
+                }
+            }, 500)
+        })
     }
-
 }
 
 export default new wait();
